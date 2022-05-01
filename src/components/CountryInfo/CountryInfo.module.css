@@ -1,0 +1,48 @@
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+}
+
+.detailsTop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg-light);
+  padding: 1.5rem;
+}
+
+.detailsTop img {
+  width: 200px;
+  display: block;
+}
+
+.detailsTop h2,
+.detailsTop h4 {
+  text-transform: uppercase;
+  padding: 0.2rem;
+}
+
+.detailsBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsBottom li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  min-height: 4rem;
+  padding: 0 2rem;
+  background-color: var(--bg-dark);
+}
+
+.detailsBottom li:nth-child(2n) {
+  background-color: var(--bg-dark-2);
+}
+
+.detailsBottom li span:first-child {
+  font-size: 1.2rem;
+}

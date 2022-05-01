@@ -1,0 +1,45 @@
+.country {
+  list-style-type: none;
+  width: 200px;
+  background-color: var(--bg-dark);
+  border-radius: 4px;
+}
+
+.country:nth-child(2n + 1) {
+  background-color: var(--bg-dark-2);
+}
+
+.country a {
+  text-decoration: none;
+  position: relative;
+}
+
+.country figure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 220px;
+  margin: 0.5rem auto;
+}
+
+.country img {
+  max-width: 100%;
+  min-height: 130px;
+  max-height: 130px;
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.country:hover img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.country figcaption {
+  color: white;
+  font: italic smaller sans-serif;
+  font-size: 1.4rem;
+  padding-top: 5px;
+  font-family: inherit;
+}
